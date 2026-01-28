@@ -1,6 +1,6 @@
 CREATE USER 'webappuser'@'%' IDENTIFIED BY 'P@ssw0rd';
-GRANT INSERT, UPDATE, DELETE, SELECT ON ShopDB.Countries TO 'webappuser'@'%';
+GRANT INSERT, UPDATE, DELETE, SELECT ON ShopDB.* TO 'webappuser'@'%';
 
 CREATE USER 'deploymentuser'@'%' IDENTIFIED BY 'P@ssw0rd';
-GRANT ALL ON ShopDB.Countries TO 'deploymentuser'@'%';
+GRANT ALL ON ShopDB.* TO 'deploymentuser'@'%';
 
